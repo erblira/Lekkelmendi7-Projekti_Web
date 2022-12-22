@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title> Fitness Website </title>
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width =device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+    </head>
+    <body>
+        <section id="sub-header">
+            <img src="logo.jpg"; class="logo";>
+            <div class="banner-text">
+
+                <h1> EXERCISES  </h1>   
+                <br>                
+            </div>
+          
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li> <a href="index.html"> HOME</a></li>
+            
+                   
+                    <li> <a href="exercises.html"> EXERCISES </a></li>
+                  
+                    <li> <a href="Account.html"> ACCOUNT </a></li>
+                    <li> <a href="contact.html"> CONTACT US </a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="menu.png" id="menu">
+        </div>
+
+        
+         
+            <!------------------------------------footer--------------------------->
+
+            <div class="footer">
+                <div class="footer-content">
+                    <div class="left">
+                        <h1>About Fitness Studio</h1>
+                        <p>Fitness Studio is here to motivate you to achieve your dream body. We want to make sure you will not only look good, but feel good as well.
+                            <br>
+                            <br>
+                            <br>
+                            Copyright &copy; Fitness Studio. All rights reserved.
+                        </p>
+                    </div>
+                    <div class="right">
+                        <div class="our-links">
+                            <h1>Check us out at:</h1>
+                            <div class="socials">
+                                <div class="ico-box ico">
+                                    <a href="#"><img src="facebook.png"></a>
+                                </div>
+                                <div class="ico-box ico">
+                                    <a href="#"><img src="twitter.png"></a>
+                                </div>
+                                <div class="ico-box ico">
+                                    <a href="#"><img src="instagram.png"></a>
+                                </div>
+                                <div class="ico-box ico">
+                                    <a href="#"><img src="pinterest.png"></a>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="about">
+                            <div class="l-about">
+                                <p><a class="links" href="contact.html">Contact</a></p>
+                                <p><a class="links" href="Account.html">Account</a></p>
+                                <p><a class="links" href="write.html">Write Us</a></p>
+                            </div>
+                            <div class="r-about">
+                                <p>Terms of Use</p>
+                                <p>Privacy Policy</p>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <script>
+            var menuBtn=document.getElementById("menuBtn")
+            var sideNav=document.getElementById("sideNav")
+            var menu=document.getElementById("menu")
+            sideNav.style.right="-250px";
+
+            menuBtn.onclick=function(){
+                if(sideNav.style.right=="-250px"){
+                    sideNav.style.right="0" 
+                }
+                else{
+                    sideNav.style.right="-250px"
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 500,
+                speedAsDuration: true
+            });
+        </script>
+    </body>
+</html>
